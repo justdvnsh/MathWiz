@@ -7,12 +7,81 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/intro"
+        android:layout_width="325dp"
+        android:layout_height="209dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="280dp"
+        android:background="@android:color/background_light"
+        android:padding="20dp"
+        android:text="Math Wizard lets you train your brain the Mathematician Style."
+        android:textSize="32sp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="382dp"
+        android:background="@drawable/buttons"
+        android:onClick="start"
+        android:text="Get Started"
+        android:textColor="#fff"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/intro"
+        app:layout_constraintStart_toStartOf="@+id/intro"
+        app:layout_constraintTop_toTopOf="@+id/intro" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="492dp"
+        android:padding="20dp"
+        android:text="30"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="45sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="197dp"
+        android:layout_height="99dp"
+        android:padding="10dp"
+        android:text="15 + 45"
+        android:textColor="@android:color/background_dark"
+        android:textSize="45sp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="95dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="273dp"
+        android:layout_marginLeft="273dp"
+        android:padding="5dp"
+        android:text="0/0"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="45sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/timer"
+        app:layout_constraintTop_toTopOf="@+id/timer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
