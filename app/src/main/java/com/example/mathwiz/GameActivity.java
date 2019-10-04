@@ -106,7 +106,7 @@ public class GameActivity extends AppCompatActivity {
         button3 = (Button) findViewById(R.id.button3);
         timer = findViewById(R.id.timer);
 
-        new CountDownTimer(3100, 1000) {
+        new CountDownTimer(30100, 1000) {
 
             @Override
             public void onTick(long millisUntilFinished) {
