@@ -77,11 +77,11 @@ public class GameActivity extends AppCompatActivity {
         if ( view.getTag().toString().equals(Integer.toString(locOfCorrectAnswer)) ) {
 
             userScore++;
-            Toast.makeText(GameActivity.this, "Correct", Toast.LENGTH_LONG).show();
+            Toast.makeText(GameActivity.this, "Correct", Toast.LENGTH_SHORT).show();
 
         } else {
 
-            Toast.makeText(GameActivity.this, "Wrong", Toast.LENGTH_LONG).show();
+            Toast.makeText(GameActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
 
         }
 
